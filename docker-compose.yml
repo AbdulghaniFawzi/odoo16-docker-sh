@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-  db:
+  db16:
     image: postgres:14
     user: root
     environment:
@@ -15,14 +15,14 @@ services:
     image: odoo:15
     user: root
     depends_on:
-      - db
+      - db16
     ports:
       - "10015:8069"
       - "20015:8072" # live chat
     tty: true
     command: --
     environment:
-      - HOST=db
+      - HOST=db16
       - USER=odoo
       - PASSWORD=odoo14@Elblasy
     volumes:
