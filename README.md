@@ -16,15 +16,15 @@ to set up first Odoo instance @ `localhost:10015` (default master password: `Elb
 and
 
 ``` bash
-curl -s https://raw.githubusercontent.com/elblasy33/odoo16-docker-sh/main/run.sh | sudo bash -s odoo-two 11015 21015
+curl -s https://raw.githubusercontent.com/elblasy33/odoo16-docker-sh/main/run.sh | sudo bash -s odoo-two 11016 21016
 ```
 
 to set up another Odoo instance @ `localhost:11015` (default master password: `Elblasy2022@1234`)
 
 Some arguments:
-* First argument (**odoo14-one**): Odoo deploy folder
-* Second argument (**10015**): Odoo port
-* Third argument (**20015**): live chat port
+* First argument (**odoo16-one**): Odoo deploy folder
+* Second argument (**10016**): Odoo port
+* Third argument (**20016**): live chat port
 
 If `curl` is not found, install it:
 
@@ -41,7 +41,7 @@ Start the container:
 docker-compose up
 ```
 
-* Then open `localhost:10016` to access Odoo 16.0. If you want to start the server with a different port, change **10015** to another value in **docker-compose.yml**:
+* Then open `localhost:10016` to access Odoo 16.0. If you want to start the server with a different port, change **10016** to another value in **docker-compose.yml**:
 
 ```
 ports:
