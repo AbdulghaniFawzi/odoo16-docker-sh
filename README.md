@@ -22,7 +22,7 @@ curl -s https://raw.githubusercontent.com/elblasy33/odoo14-docker-sh/main/run.sh
 to set up another Odoo instance @ `localhost:11015` (default master password: `Elblasy2022@1234`)
 
 Some arguments:
-* First argument (**odoo14-one**): Odoo deploy folder
+* First argument (**odoo16-one**): Odoo deploy folder
 * Second argument (**10015**): Odoo port
 * Third argument (**20015**): live chat port
 
