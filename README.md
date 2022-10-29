@@ -1,7 +1,7 @@
 # odoo-docker-sh
  # Quick install
 
-Installing Odoo 14 with one command.
+Installing Odoo 16 with one command.
 
 (Supports multiple Odoo instances on one server)
 
@@ -41,11 +41,11 @@ Start the container:
 docker-compose up
 ```
 
-* Then open `localhost:10015` to access Odoo 15.0. If you want to start the server with a different port, change **10015** to another value in **docker-compose.yml**:
+* Then open `localhost:10016` to access Odoo 16.0. If you want to start the server with a different port, change **10015** to another value in **docker-compose.yml**:
 
 ```
 ports:
- - "10015:8069"
+ - "10016:8069"
 ```
 
 Run Odoo container in detached mode (be able to close terminal without stopping Odoo):
@@ -57,7 +57,7 @@ docker-compose up -d
 **If you get the permission issue**, change the folder permission to make sure that the container is able to access the directory:
 
 ``` sh
-$ git clone https://github.com/pro-777/Hello-odoo15.git
+$ git clone https://github.com/elblasy33/odoo16-docker-sh.git
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
 $ mkdir -p postgresql
