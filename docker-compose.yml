@@ -5,7 +5,7 @@ services:
     user: root
     environment:
       - POSTGRES_USER=odoo
-      - POSTGRES_PASSWORD=odoo14@Elblasy     
+      - POSTGRES_PASSWORD=odoo14@bzs
       - POSTGRES_DB=postgres
     restart: always             # run as a service
     volumes:
@@ -24,12 +24,12 @@ services:
     environment:
       - HOST=db16
       - USER=odoo
-      - PASSWORD=odoo14@Elblasy
+      - PASSWORD=odoo14@bzs
     volumes:
       #- /etc/timezone:/etc/timezone:trt
       #- /etc/localtime:/etc/localtime:trt
       # - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
+      - ./enterprise:/mnt/enterprise
     restart: always             # run as a service
-    
