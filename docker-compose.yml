@@ -31,5 +31,5 @@ services:
       # - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
-      - ./enterprise:/mnt/enterprise
+      #- ./enterprise:/mnt/enterprise     # you can use it inside each instance dir, but we suggest use common dir for all instanses in same version to reduse size :remeber uncooment it in conf file
     restart: always             # run as a service
